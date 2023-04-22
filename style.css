@@ -24,7 +24,7 @@ body {
 	justify-content: center;
   text-align: center;
 	height: 100vh;
-
+  direction: ltr;
      
   //pointer-events: auto;
   
@@ -91,7 +91,7 @@ body {
   
   #content {
     margin-top: 0;
-    padding: 0 300px;
+
     text-align: center;
     
   }
@@ -153,3 +153,33 @@ body {
   cursor: pointer;
   color: #000000;
 }
+
+#tag {
+  text-align: justify;
+  margin-top: 0;
+}
+
+#tag p {
+  margin-top: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#color-bar {
+  width: 100%; 
+  height: auto; 
+}
+@media (max-width: 768px) {
+  .color-bar {
+    width: 80%; 
+  }
+}
+
+
+@media (max-width: 576px) {
+  .color-bar {
+    width: 90%; 
+  }
+}
+
+ 
