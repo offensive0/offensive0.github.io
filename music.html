@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>music</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-family: 'Roboto Mono', monospace;
+			font-size: 16px;
+			margin: 0;
+		}
+		h1 {
+			margin: 20px;
+		}
+		#playlist-container {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			overflow: hidden;
+			height: auto;
+			margin: 20px;
+			padding: 10px;
+			box-sizing: border-box;
+			background-color: #333;
+			border: 1px solid white;
+			border-radius: 5px;
+		}
+		#playlist {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			overflow-y: scroll;
+			flex: 1;
+			margin-right: 10px;
+		}
+		li {
+			margin: 10px 0;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+			cursor: pointer;
+		}
+		#audio-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  color: aliceblue;
+}
+
+#audioPlayer {
+  width: 80%;
+  height: 32px;
+  color: aliceblue;
+}
+
+#audioPlayer::-webkit-media-controls-panel {
+  text-decoration-color: aliceblue;
+  background-color: rgba(185, 127, 0, 0.247);
+  border-radius: 1px;
+  box-shadow: 0px 2px 2px rgb(255, 0, 0);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#audioPlayer::-webkit-media-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  padding: 0;
+}
+
+
+
+.responsive {
+  width: auto;
+  max-height: 30;
+  max-width: 50%;
+  height: auto;
+}
+
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<center><img src="music.png" align="middle" hspace="20" vspace="20" class="responsive"></img>
+	<p>some music i like.</p>	</center>
+	
+	<div id="playlist-container">
+		<ul id="playlist">
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1DRNiFMjEKJapVAlUYLdbs7tYnZwHgCEO">brakence - clouded</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1DsDZtZZDbxk4XsXRVsNNKQijQWDUrIjb">frank ocean - DHL</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1MLadOk7ZYsLAT3tCJOwjd908L7ZG0fIH">916frosty - FRIDAY</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1GTN8RDQveqA18b9GHhvjupRgyf6zDgKW">frank ocean - thinkin bout you</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1pQuapZhu6QsvS8PolWy7e-fOIAtjjT9y">ericdoa, brakence - thingsudo2me</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=17aI9EAIkaIyn4dWeM5sinT-I9vQ9VW55">pink floyd - the great gig in the sky</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1rSHbk2-xEBMQ5Xbz3XBHPVIjch1xsdPo">brakence - sunder</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1nCcvnkediofAF8j3IuH9vq0WZMNP7_pz">50landing - still</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1ZaH6JOVOehDc_gVwYJqNa9WabhkQ0bRF">Sona Mohapatra - Jiya Lage Na [seriously underrated]</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1gHMAYZjP8tdwbneRa9iEj29UqnKYfL9q">a$ap rocky - LVL</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1p7v_HG2GEwUimR0pcmo87FjqDsuLkyVX">playboi carti - location</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=14blofMZB8T60u8Jy0BRDSFoSabeKr7b8">yung lean - kyoto</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1NKieXKpZEWxodytO6gSMakcaiYEBztNv">50landing - dont</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1Ub0cGG7_U-CCXevPf5CiRvvJveUNYRnq">STATIC, 50landing - crush</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1zJQPQA4pGRbGD3OcEUi4tpM4Z_Y1mntv">weiland - blaming myself</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1EEowmf_52Dk1fijCtAuxz_plSfZQy1Uo">a city not on the map</a></li>
+			<li><a href="#" data-src="https://docs.google.com/uc?export=open&amp;id=1wplHSV1Txe09IPEuJNi9_q9lNDZrvRf-">BAY CITY</a></li>
+			
+		</ul>
+	</div>
+	
+	<div id="audio-player">
+		<audio id="audioPlayer" controls="controls">
+			<source id="audioSource" type="audio/mp3">
+		</audio>
+	</div>
+	<center><p>im most definietly gonna add more music as soon as i get time, until then check out my: <a href="https://open.spotify.com/user/zsezgck62y0mbu145blgo2uu2?si=dd4578d879bd48c9" target="_blank">spotify profile</a> </p></center>
+	<script>
+		var audioPlayer = document.getElementById('audioPlayer');
+		var audioSource = document.getElementById('audioSource');
+		
+		// Add event listeners to all audio file links in the playlist
+		var audioLinks = document.querySelectorAll('#playlist a');
+		audioLinks.forEach(function(audioLink) {
+			audioLink.addEventListener('click', function(event) {
+				event.preventDefault();
+				var audioSrc = this.getAttribute('data-src');
+				audioSource.setAttribute('src', audioSrc);
+				audioPlayer.load();
+				audioPlayer.play();
+			});
+		});
+		
+		
+	</script>
+</body>
+</html>
